@@ -14,8 +14,8 @@ package de.gamelmc.gutilities.main;
  */
 
 
-import com.karatek.gutilities.commands.*;
-import com.karatek.gutilities.listener.*;
+import net.karatek.gutilities.commands.*;
+import net.karatek.gutilities.listener.*;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginManager;
@@ -25,11 +25,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
 
-    public static String prefix = "§r[§6§lGamelMC§r] ";
-    public static String devprefix = "§r[§b§lGamelMC§r] ";
+    public static String prefix = "§r[§6§lkaratek.net§r] ";
+    public static String devprefix = "§r[§b§lkaratek.net§r] ";
     public static String pre = prefix;
     public static boolean unstable = true;
-    public static String version = "1.0 Beta 3";
+    public static String version = "1.0 for 1.14.2";
     public static boolean devlock = false;
 
 
@@ -60,9 +60,12 @@ public class Main extends JavaPlugin {
         this.getCommand("tc").setExecutor(new Command_TeamChat());
         this.getCommand("spy").setExecutor(new Command_Spy());
         this.getCommand("kkick").setExecutor(new Command_Kick());
+        this.getCommand("chat").setExecutor(new Command_Chat());
 
         //get PluginManager
         PluginManager pm = Bukkit.getPluginManager();
+
+        //register Events
         pm.registerEvents(new ScoreboardManager(), this);
         pm.registerEvents(new PlayerSignListener(), this);
         pm.registerEvents(new SignColorEvent(), this);
@@ -76,6 +79,7 @@ public class Main extends JavaPlugin {
         pm.registerEvents(new PlusListener(), this);
         pm.registerEvents(new SneakListener(), this);
         pm.registerEvents(new DevLockerListener(), this);
+        pm.registerEvents(new FlyListener(), this);
 
     }
 

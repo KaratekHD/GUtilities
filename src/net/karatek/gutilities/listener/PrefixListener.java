@@ -1,4 +1,4 @@
-package com.karatek.gutilities.listener;
+package net.karatek.gutilities.listener;
 
 /*
  * GUtilities
@@ -36,7 +36,6 @@ public class PrefixListener implements Listener {
         if(p.hasPermission("gamelmc.adminchat")) {
             e.setFormat("§8»\n§r" + p.getDisplayName() + " §r: §a§l" + msg + "\n§8»");
         }
-        ScoreboardManager.getManager().setBoard(p);
 
     }
 }

@@ -1,4 +1,4 @@
-package com.karatek.gutilities.listener;
+package net.karatek.gutilities.listener;
 
 /*
  * GUtilities
@@ -13,24 +13,15 @@ package com.karatek.gutilities.listener;
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import de.gamelmc.gutilities.main.Main;
-import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
-import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerJoinEvent;
-import org.bukkit.scoreboard.DisplaySlot;
-import org.bukkit.scoreboard.Objective;
-import org.bukkit.scoreboard.Score;
-import org.bukkit.scoreboard.Scoreboard;
-import ru.tehkode.permissions.bukkit.PermissionsEx;
 
 public class ScoreboardManager implements Listener {
 
     private static ScoreboardManager manager;
 
 
-    public void setBoard(Player p) {
+
+    /*public void setBoard(Player p) {
         Scoreboard s = Bukkit.getScoreboardManager().getNewScoreboard();
         Objective o = s.registerNewObjective("aaa", "bbb");
         int players = Bukkit.getServer().getOnlinePlayers().size();
@@ -126,15 +117,13 @@ public class ScoreboardManager implements Listener {
         }
     }
 
+     */
+
     public static ScoreboardManager getManager() {
         return manager;
     }
 
-    @EventHandler
-    public void onJoin(PlayerJoinEvent e) {
-        manager = this;
-        setBoard(e.getPlayer());
-    }
+
 
 
 }

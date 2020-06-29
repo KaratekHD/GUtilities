@@ -1,4 +1,4 @@
-package com.karatek.gutilities.listener;
+package net.karatek.gutilities.listener;
 
 /*
  * GUtilities

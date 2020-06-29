@@ -1,4 +1,4 @@
-package com.karatek.gutilities.listener;
+package net.karatek.gutilities.listener;
 
 /*
  * GUtilities
@@ -13,28 +13,19 @@ package com.karatek.gutilities.listener;
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import de.gamelmc.gutilities.main.Main;
-import org.bukkit.Bukkit;
+
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import ru.tehkode.permissions.PermissionUser;
-import ru.tehkode.permissions.bukkit.PermissionsEx;
 
 public class PlayerJoinEvent implements Listener {
 
     @EventHandler
     public void onJoin(org.bukkit.event.player.PlayerJoinEvent e) {
-        e.setJoinMessage(null);
+        e.setJoinMessage("§7[§a+§7] " + e.getPlayer().getDisplayName());
         Player p = e.getPlayer();
-        if(e.getPlayer().hasPermission("gamelmc.teamchat")) {
-            boolean loggedin = p.hasMetadata("tclogin");
-            if(loggedin) {
-                p.sendMessage(Main.prefix + "Status im Teamchat: §aeingeloggt.");
-            } else {
-                p.sendMessage(Main.prefix + "Status im Teamchat: §causgeloggt.");
-            }
-        }
+
+        /*
         PermissionUser pu = PermissionsEx.getUser(p);
         if(pu.inGroup("Developer") || pu.inGroup("MainDeveloper")) {
             boolean devmode = p.hasMetadata("devmode");
@@ -75,15 +66,12 @@ public class PlayerJoinEvent implements Listener {
             } else {
                 p.sendMessage(Main.devprefix + "Entwicklungsmodus: §cdeaktiviert.");
             }
+
+         */
         }
-        for(Player all : Bukkit.getOnlinePlayers()) {
-            if(all.hasMetadata("joinmsg")) {
-                if(all.getUniqueId() == p.getUniqueId()) return;
-                all.sendMessage("§7[§a+§7] " + e.getPlayer().getName());
-            }
-        }
+
 
     }
 
 
-}
+

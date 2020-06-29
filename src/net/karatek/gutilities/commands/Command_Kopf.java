@@ -1,4 +1,4 @@
-package com.karatek.gutilities.commands;
+package net.karatek.gutilities.commands;
 
 /*
  * GUtilities
@@ -40,7 +40,7 @@ public class Command_Kopf implements CommandExecutor {
             return true;
         } if(args.length == 1) {
             //create itemstack if syntax is correct
-            ItemStack is = new ItemStack(Material.SKULL_ITEM, 1 , (short)3);
+            ItemStack is = new ItemStack(Material.LEGACY_SKULL, 1 , (short)3);
             SkullMeta im = (SkullMeta)is.getItemMeta();
             //set metadata
             im.setOwner(args[0]);

@@ -1,5 +1,5 @@
 name: GUtilities
-version: 1.0
+version: 1.0 for 1.14
 main: de.gamelmc.gutilities.main.Main
 author: GamelMC Development Team
 authors:
@@ -21,3 +21,5 @@ commands:
     description: Ändert deinen Status im TeamChat.
   spy:
     description: Lässt dich die Befehle von Spielern sehen.
+  chat:
+    description:

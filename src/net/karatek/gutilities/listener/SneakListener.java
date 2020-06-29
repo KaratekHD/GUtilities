@@ -1,4 +1,4 @@
-package com.karatek.gutilities.listener;
+package net.karatek.gutilities.listener;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -9,6 +9,5 @@ public class SneakListener implements Listener {
 
     @EventHandler
     public void onSneak(PlayerToggleSneakEvent e) {
-        ScoreboardManager.getManager().setBoard(e.getPlayer());
     }
 }

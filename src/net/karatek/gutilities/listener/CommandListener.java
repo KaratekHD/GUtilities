@@ -1,4 +1,4 @@
-package com.karatek.gutilities.listener;
+package net.karatek.gutilities.listener;
 
 /*
  * GUtilities
@@ -13,37 +13,26 @@ package com.karatek.gutilities.listener;
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
+import de.gamelmc.gutilities.main.Main;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerKickEvent;
-import org.bukkit.event.player.PlayerQuitEvent;
+import org.bukkit.event.player.PlayerCommandPreprocessEvent;
 
-public class QuitListener implements Listener {
+public class CommandListener implements Listener {
 
     @EventHandler
-    public void onQuit(PlayerQuitEvent e) {
-        e.setQuitMessage(null);
+    public void onCommand(PlayerCommandPreprocessEvent e) {
         Player p = e.getPlayer();
         for(Player all : Bukkit.getOnlinePlayers()) {
-            if(all.hasMetadata("joinmsg")) {
+            if(all.hasMetadata("spyer")) {
                 if(all.getUniqueId() == p.getUniqueId()) return;
-                all.sendMessage("§7[§4-§7] " + e.getPlayer().getName());
+                if(p.hasMetadata("cmdspybypass")) return;
+                all.sendMessage(Main.prefix + "§rDer Spieler " + p.getDisplayName() + " §rhat einen Command ausgeführt: §a" + e.getMessage());
             }
         }
     }
 
-    @EventHandler
-    public void onKick(PlayerKickEvent e) {
-        Player p = e.getPlayer();
-        e.setLeaveMessage(null);
-        for(Player all : Bukkit.getOnlinePlayers()) {
-            if(all.hasMetadata("joinmsg")) {
-                if(all.getUniqueId() == p.getUniqueId()) return;
-                all.sendMessage("§7[§4K§7] " + e.getPlayer().getName());
-            }
-        }
-    }
 
 }

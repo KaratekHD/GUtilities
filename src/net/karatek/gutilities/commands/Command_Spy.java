@@ -1,4 +1,4 @@
-package com.karatek.gutilities.commands;
+package net.karatek.gutilities.commands;
 
 /*
  * GUtilities

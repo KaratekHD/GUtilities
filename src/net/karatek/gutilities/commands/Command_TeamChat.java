@@ -1,4 +1,4 @@
-package com.karatek.gutilities.commands;
+package net.karatek.gutilities.commands;
 
 /*
  * GUtilities
@@ -30,7 +30,7 @@ public class Command_TeamChat implements CommandExecutor {
             return false;
         } else {
             Player p = (Player) sender;
-            if(!p.hasPermission("gamelmc.teamchat")) {
+            /*if(!p.hasPermission("gamelmc.teamchat")) {
                 p.sendMessage("§cDazu hast du keine Rechte!");
                 return false;
             } else {
@@ -44,6 +44,9 @@ public class Command_TeamChat implements CommandExecutor {
                 }
 
             }
+
+             */
+            p.sendMessage("§cThis command is deprecated.");
         }
         return false;
     }
