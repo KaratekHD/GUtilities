@@ -13,12 +13,10 @@ package net.karatek.gutilities.commands;
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import de.gamelmc.gutilities.main.Main;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import org.bukkit.metadata.FixedMetadataValue;
 
 public class Command_TeamChat implements CommandExecutor {
 

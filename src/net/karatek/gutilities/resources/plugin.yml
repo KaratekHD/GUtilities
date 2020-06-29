@@ -1,6 +1,6 @@
-name: GUtilities
-version: 1.0 for 1.14
-main: de.gamelmc.gutilities.main.Main
+name: GUtilities-Reloaded
+version: 1.0 Alpha for Minecraft 1.16.1
+main: net.karatek.gutilities.main.Main
 author: GamelMC Development Team
 authors:
   - Karatek_HD

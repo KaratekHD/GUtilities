@@ -14,7 +14,7 @@ package net.karatek.gutilities.listener;
  */
 
 
-import de.gamelmc.gutilities.main.Main;
+import net.karatek.gutilities.main.Main;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -24,7 +24,7 @@ import org.bukkit.metadata.FixedMetadataValue;
 
 public class PlusListener implements Listener {
 
-    /*
+
     @EventHandler
     public void onChat(AsyncPlayerChatEvent e) {
         Player p = e.getPlayer();
@@ -38,7 +38,7 @@ public class PlusListener implements Listener {
             e.setCancelled(true);
             if(p.hasMetadata("devmode")) {
                 p.removeMetadata("devmode", Main.getInstance());
-                //p.sendMessage(Main.devprefix + "Entwicklungsmodus: §cdeaktiviert.");
+                p.sendMessage(Main.devprefix + "Entwicklungsmodus: §cdeaktiviert.");
                 return;
             } else {
                 p.setMetadata("devmode", new FixedMetadataValue(Main.getInstance(), 0));
@@ -160,6 +160,5 @@ public class PlusListener implements Listener {
         else return "§c§l•";
     }
 
-     */
 
 }

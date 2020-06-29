@@ -2,19 +2,36 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
+      <artifact name="GUtilities" />
       <artifact name="GUtils" />
+      <artifact name="TemplateServer" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c546d667-f53c-471d-a53a-72fe387a3900" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/GUtilities_Reloaded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/TemplateServer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/spigot_1_16_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/paper_api_1_14_4_R0_1_SNAPSHOT.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/karatek/gutilities/listener/PlusListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/karatek/gutilities/listener/PlusListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/karatek/gutilities/listener/TeamChatListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/karatek/gutilities/listener/TeamChatListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/de/gamelmc/gutilities/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/de/gamelmc/gutilities/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUtilities.iml" beforeDir="false" afterPath="$PROJECT_DIR$/GUtilities.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GUtilities/de/gamelmc/gutilities/resources/plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/gamelmc/gutilities/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/karatek/gutilities/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/de/gamelmc/gutilities/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/karatek/gutilities/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/karatek/gutilities/commands/Command_ChatClear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/karatek/gutilities/commands/Command_ChatClear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/karatek/gutilities/commands/Command_Kopf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/karatek/gutilities/commands/Command_Kopf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/karatek/gutilities/commands/Command_Spy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/karatek/gutilities/commands/Command_Spy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/karatek/gutilities/commands/Command_TeamChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/karatek/gutilities/commands/Command_TeamChat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/karatek/gutilities/commands/Command_Version.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/karatek/gutilities/commands/Command_Version.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/karatek/gutilities/listener/BroadcastListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/karatek/gutilities/listener/BroadcastListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/karatek/gutilities/listener/CommandListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/karatek/gutilities/listener/CommandListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/karatek/gutilities/listener/DevLockerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/karatek/gutilities/listener/DevLockerListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/karatek/gutilities/listener/PlayerSignListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/karatek/gutilities/listener/PlayerSignListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/karatek/gutilities/listener/PlusListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/karatek/gutilities/listener/PlusListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/karatek/gutilities/listener/SignColorEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/karatek/gutilities/listener/SignColorEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/karatek/gutilities/listener/UpperCaseListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/karatek/gutilities/listener/UpperCaseListener.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,133 +40,6 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/karatek/gutilities/listener/QuitListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1364">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/karatek/gutilities/listener/SignColorEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1488">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/karatek/gutilities/listener/ScoreboardManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2449">
-              <caret line="89" column="45" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4811#4812#0" expanded="true" />
-                <element signature="e#4841#4842#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/karatek/gutilities/listener/SneakListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#289#290#0" expanded="true" />
-                <element signature="e#359#360#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/karatek/gutilities/listener/TeamChatListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1023">
-              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/karatek/gutilities/commands/Command_ChatClear.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="837">
-              <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/karatek/gutilities/listener/CommandListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="775">
-              <caret line="30" column="57" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/de/gamelmc/gutilities/main/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1133#1134#0" expanded="true" />
-                <element signature="e#1164#1165#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/karatek/gutilities/listener/UpperCaseListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="806">
-              <caret line="30" column="71" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="71" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/de/gamelmc/gutilities/resources/plugin.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="713">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -157,120 +47,32 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>AsyncPlayerChatEvent</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src/com/karatek/gutilities</dir>
+    </dirStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/com/karatek/gutilities/commands/COmmand_ChatClear.java" />
-        <option value="$PROJECT_DIR$/src/com/karatek/gutilities/commands/COmmand_Kick.java" />
-        <option value="$PROJECT_DIR$/src/com/karatek/gutilities/commands/Command_Kopf.java" />
-        <option value="$PROJECT_DIR$/src/com/karatek/gutilities/commands/Command_SPy.java" />
-        <option value="$PROJECT_DIR$/src/com/karatek/gutilities/commands/Command_TeamCHat.java" />
-        <option value="$PROJECT_DIR$/src/com/karatek/gutilities/commands/Command_Version.java" />
-        <option value="$PROJECT_DIR$/src/com/karatek/gutilities/listener/BroadcastListener.java" />
-        <option value="$PROJECT_DIR$/src/com/karatek/gutilities/listener/CommandListener.java" />
-        <option value="$PROJECT_DIR$/src/com/karatek/gutilities/listener/DevLockerListener.java" />
-        <option value="$PROJECT_DIR$/src/com/karatek/gutilities/listener/PlayerJoinEvent.java" />
-        <option value="$PROJECT_DIR$/src/com/karatek/gutilities/listener/PlayerSignListener.java" />
-        <option value="$PROJECT_DIR$/src/com/karatek/gutilities/listener/PrefixListener.java" />
-        <option value="$PROJECT_DIR$/src/com/karatek/gutilities/listener/QuitListener.java" />
-        <option value="$PROJECT_DIR$/src/com/karatek/gutilities/listener/SignColorEvent.java" />
-        <option value="$PROJECT_DIR$/src/com/karatek/gutilities/listener/ScoreboardManager.java" />
-        <option value="$PROJECT_DIR$/src/com/karatek/gutilities/listener/SneakListener.java" />
-        <option value="$PROJECT_DIR$/src/com/karatek/gutilities/listener/UpperCaseListener.java" />
-        <option value="$PROJECT_DIR$/src/de/gamelmc/gutilities/resources/plugin.yml" />
-        <option value="$PROJECT_DIR$/src/com/karatek/gutilities/listener/TeamChatListener.java" />
-        <option value="$PROJECT_DIR$/src/de/gamelmc/gutilities/main/Main.java" />
-        <option value="$PROJECT_DIR$/src/com/karatek/gutilities/listener/PlusListener.java" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="200" />
-    <option name="y" value="108" />
-    <option name="width" value="1200" />
-    <option name="height" value="648" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <hideEmptyPackages ProjectPane="false" />
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="GUtilities" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GUtilities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GUtilities" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GUtilities" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GUtilities" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GUtilities" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gutilities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GUtilities" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GUtilities" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gutilities" type="462c0819:PsiDirectoryNode" />
-              <item name="commands" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GUtilities" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GUtilities" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gutilities" type="462c0819:PsiDirectoryNode" />
-              <item name="listener" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GUtilities" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GUtilities" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gutilities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GUtilities" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GUtilities" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="gutilities" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectId" id="1SSjw0P24V2jQe8fFmY7AClECGG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Servers/exact/plugins" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Servers/sechzehn/plugins" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="http.proxy" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -282,340 +84,41 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561316455968</updated>
+      <workItem from="1593449887899" duration="1421000" />
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="0" width="3840" height="2107" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26790452" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" visible="true" weight="0.33103082" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/karatek/gutilities/listener.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/karatek/gutilities/commands/Command_Kick.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/karatek/gutilities/commands/Command_Kopf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1984">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/karatek/gutilities/commands/Command_Spy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/karatek/gutilities/commands/Command_TeamChat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/karatek/gutilities/commands/Command_Version.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1666">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/karatek/gutilities/listener/BroadcastListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="767">
-          <caret line="36" column="40" lean-forward="true" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/karatek/gutilities/listener/DevLockerListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/karatek/gutilities/listener/PlayerJoinEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1108">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/karatek/gutilities/listener/PlayerSignListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2759">
-          <caret line="97" selection-start-line="97" selection-end-line="97" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/karatek/gutilities/listener/PlusListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2976">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/karatek/gutilities/listener/PrefixListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1209">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/karatek/gutilities/listener/QuitListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1364">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/karatek/gutilities/listener/SignColorEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1488">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/karatek/gutilities/listener/ScoreboardManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2449">
-          <caret line="89" column="45" selection-start-line="89" selection-start-column="45" selection-end-line="89" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4811#4812#0" expanded="true" />
-            <element signature="e#4841#4842#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/karatek/gutilities/listener/SneakListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#289#290#0" expanded="true" />
-            <element signature="e#359#360#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/gamelmc/gutilities/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1133#1134#0" expanded="true" />
-            <element signature="e#1164#1165#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/karatek/gutilities/listener/UpperCaseListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="806">
-          <caret line="30" column="71" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/de/gamelmc/gutilities/resources/plugin.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/karatek/gutilities/listener/TeamChatListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1023">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/karatek/gutilities/commands/Command_ChatClear.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="837">
-          <caret line="27" column="42" lean-forward="true" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/karatek/gutilities/listener/CommandListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="30" column="57" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>GUtils</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>spigot-1.8.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="WindowStateProjectService">
+    <state x="2895" y="806" key="FileChooserDialogImpl" timestamp="1593450629777">
+      <screen x="1280" y="0" width="3840" height="2160" />
+    </state>
+    <state x="2895" y="806" key="FileChooserDialogImpl/1280.0.3840.2160/0.1136.1280.1024/5120.1136.1280.1024@1280.0.3840.2160" timestamp="1593450629777" />
+    <state x="2688" y="640" key="SettingsEditor" timestamp="1593450645793">
+      <screen x="1280" y="0" width="3840" height="2160" />
+    </state>
+    <state x="2688" y="640" key="SettingsEditor/1280.0.3840.2160/0.1136.1280.1024/5120.1136.1280.1024@1280.0.3840.2160" timestamp="1593450645793" />
+    <state x="2800" y="798" key="Vcs.Push.Dialog.v2" timestamp="1593450299502">
+      <screen x="1280" y="0" width="3840" height="2160" />
+    </state>
+    <state x="2800" y="798" key="Vcs.Push.Dialog.v2/1280.0.3840.2160/0.1136.1280.1024/5120.1136.1280.1024@1280.0.3840.2160" timestamp="1593450299502" />
+    <state x="2968" y="963" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1593450288109">
+      <screen x="1280" y="0" width="3840" height="2160" />
+    </state>
+    <state x="2968" y="963" key="git4idea.remote.GitConfigureRemotesDialog/1280.0.3840.2160/0.1136.1280.1024/5120.1136.1280.1024@1280.0.3840.2160" timestamp="1593450288109" />
   </component>
 </project>

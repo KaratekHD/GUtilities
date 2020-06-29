@@ -1,4 +1,4 @@
-package de.gamelmc.gutilities.main;
+package net.karatek.gutilities.main;
 
 /*
  * GUtilities

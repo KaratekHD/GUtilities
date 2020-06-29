@@ -13,7 +13,7 @@ package net.karatek.gutilities.commands;
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import de.gamelmc.gutilities.main.Main;
+import net.karatek.gutilities.main.Main;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;

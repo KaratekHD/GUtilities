@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="TemplateServer">
+    <output-path>$PROJECT_DIR$/../TemplateServer/plugins</output-path>
+    <root id="archive" name="GUtils.jar">
+      <element id="module-output" name="GUtilities" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/net/karatek/gutilities/resources/plugin.yml" />
+    </root>
+  </artifact>
+</component>

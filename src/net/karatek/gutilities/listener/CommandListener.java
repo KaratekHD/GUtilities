@@ -13,7 +13,7 @@ package net.karatek.gutilities.listener;
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import de.gamelmc.gutilities.main.Main;
+import net.karatek.gutilities.main.Main;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

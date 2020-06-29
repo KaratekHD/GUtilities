@@ -13,15 +13,7 @@ package net.karatek.gutilities.listener;
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-import de.gamelmc.gutilities.main.Main;
-import org.bukkit.Bukkit;
-import org.bukkit.block.Sign;
-import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.block.SignChangeEvent;
-import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.inventory.Inventory;
-import org.bukkit.inventory.ItemStack;
 
 public class PlayerSignListener implements Listener {
 

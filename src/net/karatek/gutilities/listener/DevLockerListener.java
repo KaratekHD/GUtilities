@@ -1,6 +1,6 @@
 package net.karatek.gutilities.listener;
 
-import de.gamelmc.gutilities.main.Main;
+import net.karatek.gutilities.main.Main;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.BlockBreakEvent;
