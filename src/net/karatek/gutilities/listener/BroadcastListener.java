@@ -37,7 +37,7 @@ public class BroadcastListener implements Listener {
                 //broadcast
                 e.setCancelled(true);
                 String bcmsgorig = e.getMessage();
-                String bcmsg = bcmsgorig.replaceAll("@bc ", "");
+                String bcmsg = bcmsgorig.replace("@bc ", "").replace("@bc", "");
                 Bukkit.broadcastMessage("-------------------" + Main.pre + "-------------------");
                 Bukkit.broadcastMessage(bcmsg);
                 Bukkit.broadcastMessage("-------------------" + Main.pre + "-------------------");
