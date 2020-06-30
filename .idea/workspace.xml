@@ -8,7 +8,9 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c546d667-f53c-471d-a53a-72fe387a3900" name="Default Changelist" comment="">
+    <list default="true" id="c546d667-f53c-471d-a53a-72fe387a3900" name="Default Changelist" comment="This spelling mistake triggers me">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/net/karatek/gutilities/listener/BroadcastListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/karatek/gutilities/listener/BroadcastListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/net/karatek/gutilities/listener/PlusListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/karatek/gutilities/listener/PlusListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/net/karatek/gutilities/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/net/karatek/gutilities/main/Main.java" afterDir="false" />
     </list>
@@ -64,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1561316455968</updated>
-      <workItem from="1593449887899" duration="4373000" />
+      <workItem from="1593449887899" duration="4688000" />
     </task>
     <task id="LOCAL-00001" summary="Beginning to port to Minecraft 1.16.1">
       <created>1593451340936</created>
@@ -94,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593510401017</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="This spelling mistake triggers me">
+      <created>1593510434436</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1593510434436</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,13 +126,14 @@
     <MESSAGE value="Diesabled /kopf" />
     <MESSAGE value="Fixed Broadcast listener" />
     <MESSAGE value="Fixed a bug in Broadcast Listener" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed a bug in Broadcast Listener" />
+    <MESSAGE value="This spelling mistake triggers me" />
+    <option name="LAST_COMMIT_MESSAGE" value="This spelling mistake triggers me" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2783" y="623" key="CommitChangelistDialog2" timestamp="1593510400817">
+    <state x="2783" y="623" key="CommitChangelistDialog2" timestamp="1593510658625">
       <screen x="1280" y="0" width="3840" height="2160" />
     </state>
-    <state x="2783" y="623" key="CommitChangelistDialog2/1280.0.3840.2160/0.1136.1280.1024/5120.1136.1280.1024@1280.0.3840.2160" timestamp="1593510400817" />
+    <state x="2783" y="623" key="CommitChangelistDialog2/1280.0.3840.2160/0.1136.1280.1024/5120.1136.1280.1024@1280.0.3840.2160" timestamp="1593510658625" />
     <state x="2895" y="806" key="FileChooserDialogImpl" timestamp="1593450629777">
       <screen x="1280" y="0" width="3840" height="2160" />
     </state>
