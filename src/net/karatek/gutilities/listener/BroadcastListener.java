@@ -38,6 +38,10 @@ public class BroadcastListener implements Listener {
                 e.setCancelled(true);
                 String bcmsgorig = e.getMessage();
                 String bcmsg = bcmsgorig.replace("@bc ", "").replace("@bc", "");
+                if(bcmsg.equalsIgnoreCase(" ") || bcmsg.equalsIgnoreCase("") || bcmsg == null) {
+                    p.sendMessage(Main.pre + "§r Deine Nachicht wurde nicht ausgegeben.");
+                    return;
+                }
                 Bukkit.broadcastMessage("-------------------" + Main.pre + "-------------------");
                 Bukkit.broadcastMessage(bcmsg);
                 Bukkit.broadcastMessage("-------------------" + Main.pre + "-------------------");
