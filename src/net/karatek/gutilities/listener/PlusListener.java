@@ -30,7 +30,7 @@ public class PlusListener implements Listener {
         Player p = e.getPlayer();
         String msg = e.getMessage();
         if(!msg.startsWith("++dev")) {
-            e.setCancelled(false);
+            //e.setCancelled(false);
             return;
         }
         if(msg.equalsIgnoreCase("++dev")) {
@@ -46,7 +46,6 @@ public class PlusListener implements Listener {
                 return;
             }
         }
-
         if(msg.startsWith("++") && p.hasMetadata("devmode")) {
             e.setCancelled(true);
             boolean used = false;

@@ -23,6 +23,7 @@ public class PrefixListener implements Listener {
     @EventHandler
 
     public void onChat(AsyncPlayerChatEvent e) {
+        System.out.println("Debug: _" + e.getMessage());
         //get player
         Player p = e.getPlayer();
         //get message
@@ -35,6 +36,9 @@ public class PrefixListener implements Listener {
         }
         if(p.hasPermission("gamelmc.adminchat")) {
             e.setFormat("§8»\n§r" + p.getDisplayName() + " §r: §a§l" + msg + "\n§8»");
+        }
+        if(e.getMessage().startsWith("@")) {
+            e.setCancelled(true);
         }
 
     }

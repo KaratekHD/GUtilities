@@ -28,18 +28,20 @@ public class BroadcastListener implements Listener {
         Player p = e.getPlayer();
         //check beginning
         if(e.getMessage().startsWith("@bc")) {
+            e.setCancelled(true);
             //check senders permission
             if(!p.hasPermission("gamelmc.broadcast")) {
                 p.sendMessage("§cDazu hast du keine Rechte!");
                 e.setCancelled(true);
             } else {
                 //broadcast
+                e.setCancelled(true);
                 String bcmsgorig = e.getMessage();
-                String bcmsg = bcmsgorig.replaceAll("@bc", "§a§l");
+                String bcmsg = bcmsgorig.replaceAll("@bc ", "");
                 Bukkit.broadcastMessage("-------------------" + Main.pre + "-------------------");
                 Bukkit.broadcastMessage(bcmsg);
                 Bukkit.broadcastMessage("-------------------" + Main.pre + "-------------------");
-                e.setCancelled(true);
+
                 p.sendMessage(Main.pre + "§r Deine Nachicht wurde ausgegeben.");
             }
         }

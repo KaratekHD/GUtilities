@@ -42,7 +42,8 @@ public class TeamChatListener implements Listener {
             if(e.getMessage().startsWith("++dev")) {
                 e.setCancelled(true);
             } else {
-                e.setCancelled(false);
+                //TODO Fix this
+                //e.setCancelled(false);
             }
 
         }
