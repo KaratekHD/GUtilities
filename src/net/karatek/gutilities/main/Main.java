@@ -55,7 +55,7 @@ public class Main extends JavaPlugin {
         this.getCommand("kick").setExecutor(new Command_Kick());
 
         // This command is not activated since it needs to be completly rewritten for the new versions.
-        //
+        // 
         // this.getCommand("kopf").setExecutor(new Command_Kopf());
 
         this.getCommand("chatclear").setExecutor(new Command_ChatClear());
