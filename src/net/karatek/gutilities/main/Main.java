@@ -29,7 +29,7 @@ public class Main extends JavaPlugin {
     public static String devprefix = "§r[§b§lkaratek.net§r] ";
     public static String pre = prefix;
     public static boolean unstable = true;
-    public static String version = "1.0 for 1.14.2";
+    public static String version = "1.0 for 1.16.2";
     public static boolean devlock = false;
 
 
@@ -53,7 +53,11 @@ public class Main extends JavaPlugin {
 
         //register Commands
         this.getCommand("kick").setExecutor(new Command_Kick());
-        this.getCommand("kopf").setExecutor(new Command_Kopf());
+
+        // This command is not activated since it needs to be completly rewritten for the new versions.
+        //
+        // this.getCommand("kopf").setExecutor(new Command_Kopf());
+
         this.getCommand("chatclear").setExecutor(new Command_ChatClear());
         this.getCommand("cc").setExecutor(new Command_ChatClear());
         this.getCommand("gversion").setExecutor(new Command_Version());
