@@ -23,7 +23,6 @@ public class PrefixListener implements Listener {
     @EventHandler
 
     public void onChat(AsyncPlayerChatEvent e) {
-        System.out.println("Debug: _" + e.getMessage());
         //get player
         Player p = e.getPlayer();
         //get message
