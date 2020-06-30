@@ -1,8 +1,9 @@
 package net.karatek.gutilities.main;
 
 /*
- * GUtilities
- * Copyright (C) 2019 GamelMC Developers
+ * GUtilities Reloaded
+ * Copyright (C) 2020 Karatek_HD
+ * Copyright (C) 2019 GamelMC Developers / Karatek_HD
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -12,7 +13,6 @@ package net.karatek.gutilities.main;
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-
 
 import net.karatek.gutilities.commands.*;
 import net.karatek.gutilities.listener.*;

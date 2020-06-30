@@ -1,7 +1,8 @@
 package net.karatek.gutilities.listener;
 
 /*
- * GUtilities
+ * GUtilities Reloaded
+ * Copyright (C) 2020 Karatek_HD
  * Copyright (C) 2019 GamelMC Developers / Karatek_HD
  *
  * This program is free software: you can redistribute it and/or modify
@@ -12,7 +13,6 @@ package net.karatek.gutilities.listener;
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
-
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

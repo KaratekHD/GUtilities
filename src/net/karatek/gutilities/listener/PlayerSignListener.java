@@ -1,7 +1,8 @@
 package net.karatek.gutilities.listener;
 
 /*
- * GUtilities
+ * GUtilities Reloaded
+ * Copyright (C) 2020 Karatek_HD
  * Copyright (C) 2019 GamelMC Developers / Karatek_HD
  *
  * This program is free software: you can redistribute it and/or modify
