@@ -29,11 +29,8 @@ public class Command_Version implements CommandExecutor {
         if(!(sender instanceof Player)) {
             //send version
             Bukkit.getConsoleSender().sendMessage("This Server is running GUtilities " + Main.version + ".");
-            if(Main.unstable) {
-                //send message for unstable version
-                Bukkit.getConsoleSender().sendMessage("This Version is unstable.");
-            }
-            Bukkit.getServer().getConsoleSender().sendMessage("§6§lGUtilities\n" +
+            Bukkit.getServer().getConsoleSender().sendMessage("§6§lGUtilities Reloaded\n" +
+                    "§rCopyright (C) 2020 Karatek_HD" +
                     "§rCopyright (C) 2019 GamelMC Developers\n" +
                     "This program is free software: you can redistribute it and/or modify\n" +
                     "it under the terms of the GNU General Public License as published by\n" +
@@ -47,11 +44,8 @@ public class Command_Version implements CommandExecutor {
             Player p = (Player) sender;
             //send version
             p.sendMessage("This Server is running GUtilities §a" + Main.version + "§r.");
-            if(Main.unstable) {
-                //send message for unstable version
-                p.sendMessage("This Version is unstable.");
-            }
-            p.sendMessage("§6§lGUtilities\n" +
+            p.sendMessage("§6§lGUtilities Reloaded\n" +
+                    "§rCopyright (C) 2020 Karatek_HD" +
                     "§rCopyright (C) 2019 GamelMC Developers\n" +
                     "This program is free software: you can redistribute it and/or modify\n" +
                     "it under the terms of the GNU General Public License as published by\n" +
