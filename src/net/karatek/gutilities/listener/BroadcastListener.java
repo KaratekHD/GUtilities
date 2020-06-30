@@ -42,6 +42,7 @@ public class BroadcastListener implements Listener {
                     p.sendMessage(Main.pre + "§r Deine Nachicht wurde nicht ausgegeben.");
                     return;
                 }
+                bcmsg = bcmsg.replace("&", "§"); // Color codes
                 Bukkit.broadcastMessage("-------------------" + Main.pre + "-------------------");
                 Bukkit.broadcastMessage(bcmsg);
                 Bukkit.broadcastMessage("-------------------" + Main.pre + "-------------------");
