@@ -29,10 +29,6 @@ public class PlusListener implements Listener {
     public void onChat(AsyncPlayerChatEvent e) {
         Player p = e.getPlayer();
         String msg = e.getMessage();
-        if(!msg.startsWith("++dev")) {
-            //e.setCancelled(false);
-            return;
-        }
         if(msg.equalsIgnoreCase("++dev")) {
             if(!p.hasPermission("gamelmc.devmode")) return;
             e.setCancelled(true);
@@ -46,9 +42,7 @@ public class PlusListener implements Listener {
                 return;
             }
         }
-        System.out.println("HERE WE GO!");
         if(msg.startsWith("++") && p.hasMetadata("devmode")) {
-            System.out.println("HERE WE GO! AgIN");
             e.setCancelled(true);
             boolean used = false;
             switch (msg) {
@@ -63,13 +57,6 @@ public class PlusListener implements Listener {
                         p.sendMessage(Main.devprefix + "Reload Debug Modus: §aaktiviert§r.");
                         p.setMetadata("reloadmsg", new FixedMetadataValue(Main.getInstance(), 0));
                     }
-                    break;
-                case "++off":
-                    for(Player all : Bukkit.getOnlinePlayers()) {
-                        all.kickPlayer("§4§lDer Server fährt herunter...");
-                    }
-                    Bukkit.getServer().getConsoleSender().sendMessage("§4§lDer Server wurde von " + p.getDisplayName() + " §4§lherunter gefahren.");
-                    Bukkit.shutdown();
                     break;
                 case "++scoremsg":
                     if (p.hasMetadata("scoremsg")) {
@@ -106,7 +93,7 @@ public class PlusListener implements Listener {
                     }
                     break;
                 case "++crash":
-                    if(Bukkit.getServer().getPluginManager().getPlugin("ClientCrasher") == null) {
+                    if (Bukkit.getServer().getPluginManager().getPlugin("ClientCrasher") == null) {
                         p.sendMessage(Main.devprefix + " Das §aClientCrasher§r Plugin ist nicht installiert!");
                     } else {
                         p.sendMessage(Main.devprefix + "Leite Anfrage an das §aClientCrash§r Plugin weiter...");
@@ -114,21 +101,25 @@ public class PlusListener implements Listener {
                     }
                     break;
                 case "++spybps":
-
+                    if (p.hasMetadata("cmdspybypass")) {
+                        p.sendMessage(Main.devprefix + "Commandspy Bypass: §cdeativiert§r.");
+                        p.removeMetadata("cmdspybypass", Main.getInstance());
+                    } else {
+                        p.sendMessage(Main.devprefix + "Commandspy Bypass: §aaktiviert§r.");
+                        p.setMetadata("cmdspybypass", new FixedMetadataValue(Main.getInstance(), 0));
+                    }
                     break;
                 case "++joininfo":
-                    if(p.hasMetadata("joininfo")) {
+                    if (p.hasMetadata("joininfo")) {
                         p.sendMessage(Main.devprefix + "Erweiterte Join Informationen: §cdeativiert§r.");
                         p.removeMetadata("joininfo", Main.getInstance());
                     } else {
                         p.sendMessage(Main.devprefix + "Erweiterte Join Informationen: §aaktiviert§r.");
                         p.setMetadata("joininfo", new FixedMetadataValue(Main.getInstance(), 0));
                     }
-                    used = true;
-
+                    break;
                 default:
                     if(msg.startsWith("++crash")) return;
-                    if(used) return;
                     p.sendMessage(Main.devprefix + "Unbekannter Befehl. Veruche §a++help§r!");
             }
 
@@ -141,14 +132,11 @@ public class PlusListener implements Listener {
                 "§7§l• §6++test §r-§7 Prüft, ob der DevMode aktiviert ist.\n" +
                 checkActive(p, "reloadmsg") + " §6++reloadmsg §r-§7 Schaltet Debug Informationen zum Laden von GUtilities ein oder aus.\n" +
                 checkActive(p, "joinmsg") + " §6++joinmsg §r-§7 Schaltet Debug Informationen zum Joinen von Spielern ein oder aus.\n" +
-                checkActive(p, "cmdspybypass") +" §6++spybps §r-§7 Macht dich unsichtbar gegenüber dem CommandSpy.\n" +
-                checkActive(p,"scoremsg") + " §6++scoremsg §r-§7 Schaltet Debug Informationen zum Scoreboard an oder aus.\n" +
+                checkActive(p, "cmdspybypass") + " §6++spybps §r-§7 Macht dich unsichtbar gegenüber dem CommandSpy.\n" +
+                checkActive(p, "scoremsg") + " §6++scoremsg §r-§7 Schaltet Debug Informationen zum Scoreboard an oder aus.\n" +
                 devlockChecker() + " §6++devlocker §r-§7 Schaltet den DevLocker ein/aus.\n" +
                 checkActive(p, "devmode") + " §6++dev §r-§7 Schaltet den Entwicklermodus aus.\n" +
-                checkActive(p, "joininfo") + "Schaltet erweiterte JoinInformationen ein oder aus.");
-        if(Bukkit.getServer().getPluginManager().getPlugin("ClientCrasher") != null) {
-            p.sendMessage("§7§l• §6++crash §r-§7 Lässt das Spiel eines Spielers abstürzen (experimentell)\n");
-        }
+                checkActive(p, "joininfo") + " §6++joinmsg §r-§7 Schaltet erweiterte JoinInformationen ein oder aus.");
     }
 
     public String checkActive(Player player, String metadata) {
