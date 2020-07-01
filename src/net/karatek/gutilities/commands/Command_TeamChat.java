@@ -14,10 +14,12 @@ package net.karatek.gutilities.commands;
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
+import net.karatek.gutilities.main.Main;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.metadata.FixedMetadataValue;
 
 public class Command_TeamChat implements CommandExecutor {
 
@@ -29,7 +31,7 @@ public class Command_TeamChat implements CommandExecutor {
             return false;
         } else {
             Player p = (Player) sender;
-            /*if(!p.hasPermission("gamelmc.teamchat")) {
+            if(!p.hasPermission("gamelmc.teamchat")) {
                 p.sendMessage("§cDazu hast du keine Rechte!");
                 return false;
             } else {
@@ -44,8 +46,6 @@ public class Command_TeamChat implements CommandExecutor {
 
             }
 
-             */
-            p.sendMessage("§cThis command is deprecated.");
         }
         return false;
     }
