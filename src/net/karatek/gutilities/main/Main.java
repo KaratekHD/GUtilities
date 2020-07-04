@@ -65,12 +65,12 @@ public class Main extends JavaPlugin {
         this.getCommand("spy").setExecutor(new Command_Spy());
         this.getCommand("kkick").setExecutor(new Command_Kick());
         this.getCommand("chat").setExecutor(new Command_Chat());
+        this.getCommand("ginfo").setExecutor(new Command_Info());
 
         //get PluginManager
         PluginManager pm = Bukkit.getPluginManager();
 
         //register Events
-        pm.registerEvents(new ScoreboardManager(), this);
         pm.registerEvents(new PlayerSignListener(), this);
         pm.registerEvents(new SignColorEvent(), this);
         pm.registerEvents(new QuitListener(), this);

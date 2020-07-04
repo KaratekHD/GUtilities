@@ -58,15 +58,6 @@ public class PlusListener implements Listener {
                         p.setMetadata("reloadmsg", new FixedMetadataValue(Main.getInstance(), 0));
                     }
                     break;
-                case "++scoremsg":
-                    if (p.hasMetadata("scoremsg")) {
-                        p.sendMessage(Main.devprefix + "Scoreboard Debug Modus: §cdeativiert§r.");
-                        p.removeMetadata("scoremsg", Main.getInstance());
-                    } else {
-                        p.sendMessage(Main.devprefix + "Scoreboard Debug Modus: §aaktiviert§r.");
-                        p.setMetadata("scoremsg", new FixedMetadataValue(Main.getInstance(), 0));
-                    }
-                    break;
                 case "++test":
                     p.sendMessage(Main.devprefix + "Der Entwicklermodus ist aktiviert!");
                     break;
@@ -81,15 +72,6 @@ public class PlusListener implements Listener {
                         p.sendMessage(Main.devprefix + "DevLocker: §aeingeschltet§r.");
                         Bukkit.broadcastMessage(Main.prefix + "§rDer §cDevLocker §rist derzeit §aaktiviert§r. Nur noch §bDeveloper§r können derzeit Änderungen durchführen!");
                         Bukkit.getServer().getConsoleSender().sendMessage(Main.devprefix + "DevLocker: §aeingeschltet§r.");
-                    }
-                    break;
-                case "++joinmsg":
-                    if(p.hasMetadata("joinmsg")) {
-                        p.sendMessage(Main.devprefix + "Join Debugger: §cdeativiert§r.");
-                        p.removeMetadata("joinmsg", Main.getInstance());
-                    } else {
-                        p.sendMessage(Main.devprefix + "Join Debugger: §aaktiviert§r.");
-                        p.setMetadata("joinmsg", new FixedMetadataValue(Main.getInstance(), 0));
                     }
                     break;
                 case "++crash":
@@ -109,15 +91,6 @@ public class PlusListener implements Listener {
                         p.setMetadata("cmdspybypass", new FixedMetadataValue(Main.getInstance(), 0));
                     }
                     break;
-                case "++joininfo":
-                    if (p.hasMetadata("joininfo")) {
-                        p.sendMessage(Main.devprefix + "Erweiterte Join Informationen: §cdeativiert§r.");
-                        p.removeMetadata("joininfo", Main.getInstance());
-                    } else {
-                        p.sendMessage(Main.devprefix + "Erweiterte Join Informationen: §aaktiviert§r.");
-                        p.setMetadata("joininfo", new FixedMetadataValue(Main.getInstance(), 0));
-                    }
-                    break;
                 default:
                     if(msg.startsWith("++crash")) return;
                     p.sendMessage(Main.devprefix + "Unbekannter Befehl. Veruche §a++help§r!");
@@ -131,12 +104,9 @@ public class PlusListener implements Listener {
         p.sendMessage("§7---------------------- " + Main.devprefix + "§7---------------------\n" +
                 "§7§l• §6++test §r-§7 Prüft, ob der DevMode aktiviert ist.\n" +
                 checkActive(p, "reloadmsg") + " §6++reloadmsg §r-§7 Schaltet Debug Informationen zum Laden von GUtilities ein oder aus.\n" +
-                checkActive(p, "joinmsg") + " §6++joinmsg §r-§7 Schaltet Debug Informationen zum Joinen von Spielern ein oder aus.\n" +
                 checkActive(p, "cmdspybypass") + " §6++spybps §r-§7 Macht dich unsichtbar gegenüber dem CommandSpy.\n" +
-                checkActive(p, "scoremsg") + " §6++scoremsg §r-§7 Schaltet Debug Informationen zum Scoreboard an oder aus.\n" +
                 devlockChecker() + " §6++devlocker §r-§7 Schaltet den DevLocker ein/aus.\n" +
-                checkActive(p, "devmode") + " §6++dev §r-§7 Schaltet den Entwicklermodus aus.\n" +
-                checkActive(p, "joininfo") + " §6++joinmsg §r-§7 Schaltet erweiterte JoinInformationen ein oder aus.");
+                checkActive(p, "devmode") + " §6++dev §r-§7 Schaltet den Entwicklermodus aus.");
     }
 
     public String checkActive(Player player, String metadata) {

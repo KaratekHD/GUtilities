@@ -28,18 +28,7 @@ public class PlayerJoinEvent implements Listener {
         boolean devmode = p.hasMetadata("devmode");
         if (devmode) {
             p.sendMessage(Main.devprefix + "Entwicklungsmodus: §aaktiviert.");
-            //Send messgeas about the dev modules
-            if (p.hasMetadata("joinmsg")) {
-                p.sendMessage(Main.devprefix + "Join Debugger: §aaktiviert..");
-            } else {
-                p.sendMessage(Main.devprefix + "Join Debugger: §cdeaktiviert..");
-            }
-
-            if (p.hasMetadata("scoremsg")) {
-                p.sendMessage(Main.devprefix + "Scoreboard Debugger: §aaktiviert..");
-            } else {
-                p.sendMessage(Main.devprefix + "Scoreboard Debugger: §cdeaktiviert..");
-            }
+            //Send messages about the dev modules
 
             if (p.hasMetadata("reloadmsg")) {
                 p.sendMessage(Main.devprefix + "Reload Debugger: §aaktiviert..");

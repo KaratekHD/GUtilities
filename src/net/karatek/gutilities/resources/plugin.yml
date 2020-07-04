@@ -23,3 +23,5 @@ commands:
     description: Lässt dich die Befehle von Spielern sehen.
   chat:
     description:
+  ginfo:
+    description: Informationen über Spieler anzeigen
